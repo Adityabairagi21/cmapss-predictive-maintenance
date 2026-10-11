@@ -1,0 +1,18 @@
+feature,family,meaning,MI (capped RUL),|Spearman ρ| (capped RUL),scaler mean,scaler SD
+cycle,engine age,Engine age in operating cycles (known at prediction time),0.626,0.778,108.80786195530997,68.87932080043386
+T24_delta,delta from baseline,Total temperature at LPC outlet: EWM (span 10) minus the engine's own first-10-cycle mean,0.57,0.778,0.29485083077308794,0.35823216565060406
+T30_delta,delta from baseline,Total temperature at HPC outlet: EWM (span 10) minus the engine's own first-10-cycle mean,0.574,0.782,3.55131149649844,4.264289923764372
+T50_delta,delta from baseline,Total temperature at LPT outlet: EWM (span 10) minus the engine's own first-10-cycle mean,0.73,0.851,5.967955569839174,6.872615567275106
+P30_delta,delta from baseline,Total pressure at HPC outlet: EWM (span 10) minus the engine's own first-10-cycle mean,0.616,0.805,-0.5673180674090301,0.6734297729629564
+Nf_mean10,rolling mean,Physical fan speed: trailing 10-cycle mean,0.336,0.598,2388.0929148590153,0.06175187312452406
+Nf_delta,delta from baseline,Physical fan speed: EWM (span 10) minus the engine's own first-10-cycle mean,0.467,0.712,0.037450177248837535,0.05070159231006655
+Ps30_mean10,rolling mean,Static pressure at HPC outlet: trailing 10-cycle mean,0.619,0.749,47.524032322295085,0.23510987061897734
+Ps30_delta,delta from baseline,Static pressure at HPC outlet: EWM (span 10) minus the engine's own first-10-cycle mean,0.756,0.862,0.18111882470263016,0.20906664654247983
+phi_delta,delta from baseline,Ratio of fuel flow to Ps30: EWM (span 10) minus the engine's own first-10-cycle mean,0.655,0.832,-0.48336517345535207,0.5706245011146436
+NRc_mean10,rolling mean,Corrected core speed: trailing 10-cycle mean,0.257,0.212,8143.118696130534,17.14205820844629
+NRc_delta,delta from baseline,Corrected core speed: EWM (span 10) minus the engine's own first-10-cycle mean,0.509,0.196,5.645108601453102,15.649954681088333
+BPR_delta,delta from baseline,Bypass ratio: EWM (span 10) minus the engine's own first-10-cycle mean,0.685,0.827,0.02275396099141491,0.027722882535760954
+htBleed_delta,delta from baseline,Bleed enthalpy: EWM (span 10) minus the engine's own first-10-cycle mean,0.579,0.777,0.9100230630680775,1.1252423017700266
+W31_delta,delta from baseline,HPT coolant bleed: EWM (span 10) minus the engine's own first-10-cycle mean,0.642,0.813,-0.11311251827184861,0.13239066300612287
+W32_delta,delta from baseline,LPT coolant bleed: EWM (span 10) minus the engine's own first-10-cycle mean,0.676,0.828,-0.06834728898977092,0.07919330153068734
+health_index,health index,"Mean wear-aligned drift of 12 consistent sensors from their early-life baseline, in early-life SDs",0.826,0.887,0.8511269279471763,0.9689114888232604

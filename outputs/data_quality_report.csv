@@ -1,0 +1,34 @@
+,,rows_train,rows_test,n_unique,top_value_pct,constant,near_zero_variance
+structural_checks,missing values,0.0,0.0,,,,
+structural_checks,fully duplicated rows,0.0,0.0,,,,
+structural_checks,"duplicate (unit_id, cycle) pairs",0.0,0.0,,,,
+structural_checks,duplicate sensor snapshots (ignoring cycle),0.0,0.0,,,,
+structural_checks,infinite values,0.0,0.0,,,,
+structural_checks,non-numeric columns,0.0,0.0,,,,
+structural_checks,engines with gaps or offsets in cycle numbering,0.0,0.0,,,,
+structural_checks,"rows out of (unit_id, cycle) order",0.0,0.0,,,,
+structural_checks,non-positive sensor readings,0.0,0.0,,,,
+variance_profile,T2,,,1.0,100.0,True,False
+variance_profile,op_setting_3,,,1.0,100.0,True,False
+variance_profile,P2,,,1.0,100.0,True,False
+variance_profile,epr,,,1.0,100.0,True,False
+variance_profile,Nf_dmd,,,1.0,100.0,True,False
+variance_profile,PCNfR_dmd,,,1.0,100.0,True,False
+variance_profile,farB,,,1.0,100.0,True,False
+variance_profile,P15,,,2.0,98.0320876351122,False,True
+variance_profile,htBleed,,,13.0,26.392322233532063,False,False
+variance_profile,op_setting_2,,,13.0,10.198245358925888,False,False
+variance_profile,Nf,,,53.0,5.724395327419902,False,False
+variance_profile,NRf,,,56.0,5.641995055983714,False,False
+variance_profile,W31,,,120.0,2.3508312733265475,False,False
+variance_profile,op_setting_1,,,158.0,2.0018418884203384,False,False
+variance_profile,Ps30,,,159.0,1.6528525035141293,False,False
+variance_profile,T24,,,310.0,0.920944210169163,False,False
+variance_profile,phi,,,427.0,0.6931316950220542,False,False
+variance_profile,P30,,,513.0,0.5622606756822258,False,False
+variance_profile,BPR,,,1918.0,0.1841888420338326,False,False
+variance_profile,T30,,,3012.0,0.13087101933982842,False,False
+variance_profile,T50,,,4051.0,0.0969414958072803,False,False
+variance_profile,W32,,,4745.0,0.11148272017837235,False,False
+variance_profile,NRc,,,6078.0,0.08240027143618826,False,False
+variance_profile,Nc,,,6403.0,0.07755319664582425,False,False

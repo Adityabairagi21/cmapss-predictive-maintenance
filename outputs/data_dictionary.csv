@@ -1,0 +1,28 @@
+column,dtype,meaning,units,role,is_identifier,feature_candidate,target_related
+unit_id,int32,Engine identifier (one trajectory per engine),–,identifier,True,False,True
+cycle,int32,Time index: operational cycle number within an engine,cycles,time index,True,True,True
+op_setting_1,float64,Operational setting (physical meaning not documented in readme or paper),–,operating setting,False,True,False
+op_setting_2,float64,Operational setting (physical meaning not documented in readme or paper),–,operating setting,False,True,False
+op_setting_3,float64,Operational setting (physical meaning not documented in readme or paper),–,operating setting,False,True,False
+T2,float64,Total temperature at fan inlet,°R,sensor measurement,False,True,False
+T24,float64,Total temperature at LPC outlet,°R,sensor measurement,False,True,False
+T30,float64,Total temperature at HPC outlet,°R,sensor measurement,False,True,False
+T50,float64,Total temperature at LPT outlet,°R,sensor measurement,False,True,False
+P2,float64,Pressure at fan inlet,psia,sensor measurement,False,True,False
+P15,float64,Total pressure in bypass duct,psia,sensor measurement,False,True,False
+P30,float64,Total pressure at HPC outlet,psia,sensor measurement,False,True,False
+Nf,float64,Physical fan speed,rpm,sensor measurement,False,True,False
+Nc,float64,Physical core speed,rpm,sensor measurement,False,True,False
+epr,float64,Engine pressure ratio (P50/P2),–,sensor measurement,False,True,False
+Ps30,float64,Static pressure at HPC outlet,psia,sensor measurement,False,True,False
+phi,float64,Ratio of fuel flow to Ps30,pps/psi,sensor measurement,False,True,False
+NRf,float64,Corrected fan speed,rpm,sensor measurement,False,True,False
+NRc,float64,Corrected core speed,rpm,sensor measurement,False,True,False
+BPR,float64,Bypass ratio,–,sensor measurement,False,True,False
+farB,float64,Burner fuel-air ratio,–,sensor measurement,False,True,False
+htBleed,int64,Bleed enthalpy,–,sensor measurement,False,True,False
+Nf_dmd,int64,Demanded fan speed,rpm,sensor measurement,False,True,False
+PCNfR_dmd,float64,Demanded corrected fan speed,rpm,sensor measurement,False,True,False
+W31,float64,HPT coolant bleed,lbm/s,sensor measurement,False,True,False
+W32,float64,LPT coolant bleed,lbm/s,sensor measurement,False,True,False
+RUL,int (derived),Remaining useful life = engine's last cycle − current cycle,cycles,"target (derived, Section 5)",False,False,True

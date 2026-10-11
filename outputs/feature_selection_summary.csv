@@ -1,0 +1,76 @@
+feature,family,MI (capped RUL),|Spearman ρ|,selected,reason
+cycle,cycle,0.626,0.778,True,selected
+op_setting_1,setting,0.0,0.004,False,Step 1: no information (MI < 0.02); confirmed by Sections 3.2 / 7
+op_setting_2,setting,0.006,0.005,False,Step 1: no information (MI < 0.02); confirmed by Sections 3.2 / 7
+T24,raw sensor,0.328,0.631,False,"Step 2: raw reading is a noisier version of its rolling mean (median ρ = 0.89, lower MI)"
+T30,raw sensor,0.301,0.609,False,"Step 2: raw reading is a noisier version of its rolling mean (median ρ = 0.89, lower MI)"
+T50,raw sensor,0.455,0.705,False,"Step 2: raw reading is a noisier version of its rolling mean (median ρ = 0.89, lower MI)"
+P15,raw sensor (NZV),0.007,0.117,False,Step 1: no information (MI < 0.02); confirmed by Sections 3.2 / 7
+P30,raw sensor,0.412,0.682,False,"Step 2: raw reading is a noisier version of its rolling mean (median ρ = 0.89, lower MI)"
+Nf,raw sensor,0.253,0.573,False,"Step 2: raw reading is a noisier version of its rolling mean (median ρ = 0.89, lower MI)"
+Nc,raw sensor,0.222,0.327,False,"Step 2: raw reading is a noisier version of its rolling mean (median ρ = 0.89, lower MI)"
+Ps30,raw sensor,0.492,0.72,False,"Step 2: raw reading is a noisier version of its rolling mean (median ρ = 0.89, lower MI)"
+phi,raw sensor,0.431,0.695,False,"Step 2: raw reading is a noisier version of its rolling mean (median ρ = 0.89, lower MI)"
+NRf,raw sensor,0.256,0.572,False,"Step 2: raw reading is a noisier version of its rolling mean (median ρ = 0.89, lower MI)"
+NRc,raw sensor,0.221,0.209,False,"Step 2: raw reading is a noisier version of its rolling mean (median ρ = 0.89, lower MI)"
+BPR,raw sensor,0.388,0.67,False,"Step 2: raw reading is a noisier version of its rolling mean (median ρ = 0.89, lower MI)"
+htBleed,raw sensor,0.322,0.635,False,"Step 2: raw reading is a noisier version of its rolling mean (median ρ = 0.89, lower MI)"
+W31,raw sensor,0.364,0.658,False,"Step 2: raw reading is a noisier version of its rolling mean (median ρ = 0.89, lower MI)"
+W32,raw sensor,0.371,0.66,False,"Step 2: raw reading is a noisier version of its rolling mean (median ρ = 0.89, lower MI)"
+T24_mean10,rolling mean,0.585,0.742,False,"Step 4: |ρ| > 0.9 with Ps30_mean10, which has higher MI"
+T24_ewm10,EWM,0.581,0.742,False,Step 2: EWM duplicates the rolling mean (median ρ = 0.996); rolling mean kept as the simpler definition
+T24_slope20,rolling slope,0.136,0.382,False,Step 2: slope family adds no information once levels and deltas are present (diagnostic in 9.2)
+T24_delta,delta from baseline,0.57,0.778,True,selected
+T30_mean10,rolling mean,0.582,0.751,False,"Step 4: |ρ| > 0.9 with Ps30_mean10, which has higher MI"
+T30_ewm10,EWM,0.591,0.751,False,Step 2: EWM duplicates the rolling mean (median ρ = 0.996); rolling mean kept as the simpler definition
+T30_slope20,rolling slope,0.114,0.347,False,Step 2: slope family adds no information once levels and deltas are present (diagnostic in 9.2)
+T30_delta,delta from baseline,0.574,0.782,True,selected
+T50_mean10,rolling mean,0.614,0.754,False,"Step 4: |ρ| > 0.9 with Ps30_mean10, which has higher MI"
+T50_ewm10,EWM,0.627,0.755,False,Step 2: EWM duplicates the rolling mean (median ρ = 0.996); rolling mean kept as the simpler definition
+T50_slope20,rolling slope,0.212,0.495,False,Step 2: slope family adds no information once levels and deltas are present (diagnostic in 9.2)
+T50_delta,delta from baseline,0.73,0.851,True,selected
+P30_mean10,rolling mean,0.551,0.733,False,"Step 4: |ρ| > 0.9 with Ps30_mean10, which has higher MI"
+P30_ewm10,EWM,0.572,0.734,False,Step 2: EWM duplicates the rolling mean (median ρ = 0.996); rolling mean kept as the simpler definition
+P30_slope20,rolling slope,0.183,0.463,False,Step 2: slope family adds no information once levels and deltas are present (diagnostic in 9.2)
+P30_delta,delta from baseline,0.616,0.805,True,selected
+Nf_mean10,rolling mean,0.336,0.598,True,selected
+Nf_ewm10,EWM,0.336,0.599,False,Step 2: EWM duplicates the rolling mean (median ρ = 0.996); rolling mean kept as the simpler definition
+Nf_slope20,rolling slope,0.219,0.446,False,Step 2: slope family adds no information once levels and deltas are present (diagnostic in 9.2)
+Nf_delta,delta from baseline,0.467,0.712,True,selected
+Nc_mean10,rolling mean,0.261,0.333,False,Step 3: Nc duplicates NRc (same shaft speed; corrected vs physical at constant inlet conditions)
+Nc_ewm10,EWM,0.263,0.333,False,Step 2: EWM duplicates the rolling mean (median ρ = 0.996); rolling mean kept as the simpler definition
+Nc_slope20,rolling slope,0.224,0.295,False,Step 2: slope family adds no information once levels and deltas are present (diagnostic in 9.2)
+Nc_delta,delta from baseline,0.452,0.359,False,Step 3: Nc duplicates NRc (same shaft speed; corrected vs physical at constant inlet conditions)
+Ps30_mean10,rolling mean,0.619,0.749,True,selected
+Ps30_ewm10,EWM,0.634,0.75,False,Step 2: EWM duplicates the rolling mean (median ρ = 0.996); rolling mean kept as the simpler definition
+Ps30_slope20,rolling slope,0.26,0.549,False,Step 2: slope family adds no information once levels and deltas are present (diagnostic in 9.2)
+Ps30_delta,delta from baseline,0.756,0.862,True,selected
+phi_mean10,rolling mean,0.545,0.73,False,"Step 4: |ρ| > 0.9 with Ps30_mean10, which has higher MI"
+phi_ewm10,EWM,0.556,0.731,False,Step 2: EWM duplicates the rolling mean (median ρ = 0.996); rolling mean kept as the simpler definition
+phi_slope20,rolling slope,0.217,0.509,False,Step 2: slope family adds no information once levels and deltas are present (diagnostic in 9.2)
+phi_delta,delta from baseline,0.655,0.832,True,selected
+NRf_mean10,rolling mean,0.326,0.597,False,Step 3: NRf duplicates Nf (same shaft speed; corrected vs physical at constant inlet conditions)
+NRf_ewm10,EWM,0.33,0.598,False,Step 2: EWM duplicates the rolling mean (median ρ = 0.996); rolling mean kept as the simpler definition
+NRf_slope20,rolling slope,0.198,0.432,False,Step 2: slope family adds no information once levels and deltas are present (diagnostic in 9.2)
+NRf_delta,delta from baseline,0.471,0.72,False,Step 3: NRf duplicates Nf (same shaft speed; corrected vs physical at constant inlet conditions)
+NRc_mean10,rolling mean,0.257,0.212,True,selected
+NRc_ewm10,EWM,0.254,0.212,False,Step 2: EWM duplicates the rolling mean (median ρ = 0.996); rolling mean kept as the simpler definition
+NRc_slope20,rolling slope,0.271,0.195,False,Step 2: slope family adds no information once levels and deltas are present (diagnostic in 9.2)
+NRc_delta,delta from baseline,0.509,0.196,True,selected
+BPR_mean10,rolling mean,0.609,0.752,False,"Step 4: |ρ| > 0.9 with Ps30_mean10, which has higher MI"
+BPR_ewm10,EWM,0.614,0.753,False,Step 2: EWM duplicates the rolling mean (median ρ = 0.996); rolling mean kept as the simpler definition
+BPR_slope20,rolling slope,0.163,0.447,False,Step 2: slope family adds no information once levels and deltas are present (diagnostic in 9.2)
+BPR_delta,delta from baseline,0.685,0.827,True,selected
+htBleed_mean10,rolling mean,0.61,0.757,False,"Step 4: |ρ| > 0.9 with Ps30_mean10, which has higher MI"
+htBleed_ewm10,EWM,0.602,0.758,False,Step 2: EWM duplicates the rolling mean (median ρ = 0.996); rolling mean kept as the simpler definition
+htBleed_slope20,rolling slope,0.133,0.366,False,Step 2: slope family adds no information once levels and deltas are present (diagnostic in 9.2)
+htBleed_delta,delta from baseline,0.579,0.777,True,selected
+W31_mean10,rolling mean,0.599,0.75,False,"Step 4: |ρ| > 0.9 with Ps30_mean10, which has higher MI"
+W31_ewm10,EWM,0.593,0.751,False,Step 2: EWM duplicates the rolling mean (median ρ = 0.996); rolling mean kept as the simpler definition
+W31_slope20,rolling slope,0.137,0.405,False,Step 2: slope family adds no information once levels and deltas are present (diagnostic in 9.2)
+W31_delta,delta from baseline,0.642,0.813,True,selected
+W32_mean10,rolling mean,0.608,0.752,False,"Step 4: |ρ| > 0.9 with Ps30_mean10, which has higher MI"
+W32_ewm10,EWM,0.602,0.753,False,Step 2: EWM duplicates the rolling mean (median ρ = 0.996); rolling mean kept as the simpler definition
+W32_slope20,rolling slope,0.157,0.421,False,Step 2: slope family adds no information once levels and deltas are present (diagnostic in 9.2)
+W32_delta,delta from baseline,0.676,0.828,True,selected
+health_index,health index,0.826,0.887,True,selected

@@ -1,0 +1,16 @@
+item,value
+original training shape,"(20631, 26)"
+training shape after cleaning (constant columns dropped),"(20631, 19)"
+final training shape,"(20631, 21)"
+final test shape,"(13096, 21)"
+rows removed (duplicates / outliers / missing),0
+raw sensors,21
+sensors retained after quality audit,15
+sensors with a dedicated final feature (more enter via health_index),12
+constant columns removed,7
+candidate features evaluated,75
+engineered features created,57
+engineered features in final set,16
+candidate features removed in selection,58
+final features,17
+target,"RUL_capped = min(RUL, 125); uncapped RUL also provided"
